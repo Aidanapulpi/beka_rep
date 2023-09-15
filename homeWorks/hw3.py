@@ -70,19 +70,6 @@ class Calculator:
 
 
 
-num1 = Calculator(5)
-num2 = Calculator(3)
 
-result_add = num1 + num2
-print("Addition:", result_add)  # Output: 8
-
-result_sub = num1 - num2
-print("Subtraction:", result_sub)  # Output: 2
-
-result_mul = num1 * num2
-print("Multiplication:", result_mul)  # Output: 15
-
-result_div = num1 / num2
-print("Division:", result_div)  # Output: 1.6666666666666667
 
 

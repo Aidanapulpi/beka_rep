@@ -1,50 +1,50 @@
 class Bank:
     def __init__(self, name, balanse):
-        self.__name = name
-        self.__balanse = balanse
+        self._name = name
+        self._balanse = balanse
 
     def moneyX(self):
         try:
             amount = int(input('введите сумму которую хотите пополнить:'))
             if amount > 0:
-                self.__balanse += amount
+                self._balanse += amount
             else:
                 print('сумма должна быть бтльше 0')
         except ValueError:
             print('введите корректное число')
 
     def __str__(self):
-        return self.__name, self.__balanse
+        return self._name, self._balanse
 
-    def __kill(self):
-        self.__balanse = 0
+    def _kill(self):
+        self._balanse = 0
 
 
-    def _jackpot(self):
-        self.__balanse *= 10
+    def __jackpot(self):
+        self._balanse *= 10
         print("вы выиграли джекпот, деньги умножены на 10")
 
-    def __wix(self, other):
-        other.__balanse += self.__balanse
+    def _wix(self, other):
+        other._balanse += self._balanse
 
     def get_balance(self):
-        return self.__balanse
+        return self._balanse
 
 
 user1 = Bank('aidana', 23)
 
-user1._jackpot()
+user1._Bank__jackpot()
 print(f'Ваш текущий баланс: {user1.get_balance()}')
 user1.moneyX()
 print(f'Теперь ваш баланс: {user1.get_balance()}')
 
 beka = Bank('Beka', 2000)
 print(f'Изначальный баланс Беки: {beka.get_balance()}')
-user1._Bank__wix(beka)
+user1._wix(beka)
 
 print(f'Теперь баланс беки: {beka.get_balance()}')
 
-user1._Bank__kill()
+user1._kill()
 print(f'у вас обнулился баланс')
 
 

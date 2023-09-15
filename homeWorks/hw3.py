@@ -48,28 +48,3 @@ user1._Bank__kill()
 print(f'у вас обнулился баланс')
 
 
-class Calculator:
-    def __init__(self, value):
-        self.value = value
-
-    def __add__(self, other):
-        return self.value + other.value
-
-    def __sub__(self, other):
-        return self.value - other.value
-
-    def __mul__(self, other):
-        return self.value * other.value
-
-    def __truediv__(self, other):
-        if other.value == 0:
-            raise ValueError("Division by zero is not supported")
-        return self.value / other.value
-
-
-
-
-
-
-
-

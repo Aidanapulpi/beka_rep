@@ -12,4 +12,4 @@ class Antikor:
 
 class Akim :
     def akim(self):
-        print('метод 2')
+        print('method 2')
